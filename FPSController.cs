@@ -22,7 +22,7 @@ public class FPSController : MonoBehaviour
 
     public void SetFPS(int fps)
     {
-        if (FPS > 0 && FPS <= 10000) FPS = fps;
+        if (fps > 0 && fps <= 10000) FPS = fps;
         else throw new ArgumentException();
     }
 }
