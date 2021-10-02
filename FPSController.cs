@@ -6,6 +6,10 @@ public class FPSController : MonoBehaviour
     [Range(1, 10000)] [SerializeField] private int FPS = 60;
     [SerializeField] private bool isVSyncActive;
 
+    public static FPSController instance;
+
+    private void Awake() => instance = this;
+
     private void Start()
     {
         QualitySettings.vSyncCount = !isVSyncActive ? 0 : 1;
