@@ -1,7 +1,7 @@
 # FPS (Frame Per Second) Controller for Unity
 
 By moving the **FPS controller.cs** script to the folder with your other scripts, you can limit the frame rate using the inspector in the Unity
-(changing the **FPS** integer variable) or by calling the **SetFps** method. Also, through the inspector (changing the **isVSyncActive** bool variable) or by calling the **DisableVSync/EnableVSync** method, you can turn off and turn on VSync (Vertical Sync). All these methods are in the **FPS Controller** class, which can be accessed using a singleton.
+(changing the **FPS** integer variable) or by calling the **SetFPS** method. Also, through the inspector (changing the **isVSyncActive** bool variable) or by calling the **DisableVSync/EnableVSync** method, you can turn off and turn on VSync (Vertical Sync). All these methods are located in the **FPS Controller** class, which can be accessed using a singleton.
 
 Example:
 
@@ -20,4 +20,4 @@ Example:
         }
     }
 
-***FPS Controller script must be located on any object in the scene only once to use its functions***
+***FPS Controller script must be located in the scene, only once and on any object, to use its functions***
