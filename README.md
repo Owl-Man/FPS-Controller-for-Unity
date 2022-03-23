@@ -20,4 +20,4 @@ Example:
         }
     }
 
-***FPS Controller script must be located in the scene, only once and on any object, to use its functions***
+***FPS Controller script must be located in the scene and only once, to use its functions***
