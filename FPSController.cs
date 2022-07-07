@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class FPSController : MonoBehaviour
 {
-    [Range(1, 10000)] [SerializeField] private int FPS = 60;
+    [Range(1, 1000)] [SerializeField] private int FPS = 60;
     [SerializeField] private bool isVSyncActive;
 
     public static FPSController instance;
@@ -22,7 +22,7 @@ public class FPSController : MonoBehaviour
 
     public void SetFPS(int fps)
     {
-        if (fps > 0 && fps <= 10000) FPS = fps;
+        if (fps > 0 && fps <= 1000) FPS = fps;
         else throw new ArgumentException();
     }
 }
